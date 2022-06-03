@@ -1,33 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Mobile Automation Demo" duration-ms="43250" started-at="2022-05-30T06:17:53Z" finished-at="2022-05-30T06:18:36Z">
+  <suite name="Mobile Automation Demo" duration-ms="118826" started-at="2022-06-03T08:04:02Z" finished-at="2022-06-03T08:06:00Z">
     <groups>
     </groups>
-    <test name="GeneralStore_Tc_1" duration-ms="43250" started-at="2022-05-30T06:17:53Z" finished-at="2022-05-30T06:18:36Z">
-      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1">
-        <test-method status="PASS" signature="startServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="startServer" is-config="true" duration-ms="10033" started-at="2022-05-30T11:47:53Z" finished-at="2022-05-30T11:48:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startServer -->
-        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="setCapabilities" is-config="true" duration-ms="18125" started-at="2022-05-30T11:48:03Z" finished-at="2022-05-30T11:48:21Z">
+    <test name="GeneralStore_TestCases" duration-ms="118826" started-at="2022-06-03T08:04:02Z" finished-at="2022-06-03T08:06:00Z">
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3">
+        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3@735b478]" name="setCapabilities" is-config="true" duration-ms="13972" started-at="2022-06-03T13:35:26Z" finished-at="2022-06-03T13:35:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setCapabilities -->
-        <test-method status="PASS" signature="validateToastMessage()[pri:1, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="validateToastMessage" duration-ms="4634" started-at="2022-05-30T11:48:21Z" finished-at="2022-05-30T11:48:26Z">
+        <test-method status="PASS" signature="validateTotalAmount()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3@735b478]" name="validateTotalAmount" duration-ms="20121" started-at="2022-06-03T13:35:40Z" finished-at="2022-06-03T13:36:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTotalAmount -->
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_3 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2">
+        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2@52af6cff]" name="setCapabilities" is-config="true" duration-ms="13283" started-at="2022-06-03T13:34:50Z" finished-at="2022-06-03T13:35:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCapabilities -->
+        <test-method status="PASS" signature="validateAddToCartOption()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2@52af6cff]" name="validateAddToCartOption" duration-ms="23579" started-at="2022-06-03T13:35:03Z" finished-at="2022-06-03T13:35:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddToCartOption -->
+      </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_2 -->
+      <class name="com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1">
+        <test-method status="PASS" signature="startServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@531be3c5]" name="startServer" is-config="true" duration-ms="10029" started-at="2022-06-03T13:34:02Z" finished-at="2022-06-03T13:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method status="PASS" signature="setCapabilities()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@531be3c5]" name="setCapabilities" is-config="true" duration-ms="21913" started-at="2022-06-03T13:34:12Z" finished-at="2022-06-03T13:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setCapabilities -->
+        <test-method status="PASS" signature="validateToastMessage()[pri:1, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@531be3c5]" name="validateToastMessage" duration-ms="4979" started-at="2022-06-03T13:34:34Z" finished-at="2022-06-03T13:34:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateToastMessage -->
-        <test-method status="PASS" signature="productsPageNavigation()[pri:2, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="productsPageNavigation" duration-ms="10200" started-at="2022-05-30T11:48:26Z" finished-at="2022-05-30T11:48:36Z">
+        <test-method status="PASS" signature="productsPageNavigation()[pri:2, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@531be3c5]" name="productsPageNavigation" duration-ms="10699" started-at="2022-06-03T13:34:39Z" finished-at="2022-06-03T13:34:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsPageNavigation -->
-        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@5a61f5df]" name="stopServer" is-config="true" duration-ms="13" started-at="2022-05-30T11:48:36Z" finished-at="2022-05-30T11:48:36Z">
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1@531be3c5]" name="stopServer" is-config="true" duration-ms="9" started-at="2022-06-03T13:36:00Z" finished-at="2022-06-03T13:36:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopServer -->
       </class> <!-- com.MobileAutomationDemo.TestCases.GeneralStore_Tc_1 -->
-    </test> <!-- GeneralStore_Tc_1 -->
+    </test> <!-- GeneralStore_TestCases -->
   </suite> <!-- Mobile Automation Demo -->
 </testng-results>

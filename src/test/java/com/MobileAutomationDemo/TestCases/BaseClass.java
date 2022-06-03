@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -27,6 +28,24 @@ public class BaseClass {
 	public static String appName = readconfig.getAppName();
 	public static String deviceName = readconfig.getDeviceName();
 	public static AndroidDriver driver;
+	
+//	//@BeforeClass
+//	public void setCloudCapabilities() throws IOException, InterruptedException{
+//		
+//		DesiredCapabilities caps = new DesiredCapabilities();
+//		
+//    	caps.setCapability("browserstack.user", "hashankanishka_nFshGq");
+//    	caps.setCapability("browserstack.key", "Tbk2uZyPp765z7zz9dAy");
+//    	caps.setCapability("app", "bs://77e5b8e614f0c906233fcda43139cf24afcd5cb2");
+//        caps.setCapability("device", "Google Pixel 3");
+//        caps.setCapability("os_version", "9.0");
+//    	caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
+//    	caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
+//		
+//		driver = new AndroidDriver(new URL("http://hub.browserstack.com/wd/hub"), caps);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		
+//	}
 	
 	@BeforeTest
 	public void startServer() {
@@ -58,7 +77,6 @@ public class BaseClass {
 	
 	@BeforeClass
 	public void setCapabilities() throws IOException, InterruptedException{
-	//public AndroidDriver setCapabilities() throws MalformedURLException{
 		
 		startEmulator();
 		
@@ -71,10 +89,9 @@ public class BaseClass {
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
 		cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		
+		//driver = new AndroidDriver<WebElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-		//driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//return driver;
 		
 	}
 	

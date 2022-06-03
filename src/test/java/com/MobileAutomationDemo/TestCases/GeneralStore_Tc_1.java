@@ -11,6 +11,7 @@ public class GeneralStore_Tc_1 extends BaseClass{
 	public static String expectedMessage = "Please enter your name";
 	public static String country = "Australia";
 	public static String name = "John Doe";
+	public static String invalidName = "Doe";
 	
 	@Test(priority = 1)
 	public void validateToastMessage(){
@@ -29,6 +30,15 @@ public class GeneralStore_Tc_1 extends BaseClass{
 	public void productsPageNavigation() throws InterruptedException{
 		
 		GeneralStorePage gsp = new GeneralStorePage(driver);
+		
+//		gsp.txtName.sendKeys(invalidName);
+//		driver.hideKeyboard();
+//		
+//		gsp.txtName.getText();
+//		if(gsp.txtName.getText().length() <= 3){
+//			System.out.println("Validation Failed. Name must include atleast 4 characters");
+//			Assert.assertTrue(false);
+//		}
 		
 		gsp.ddCountry.click();
 		
